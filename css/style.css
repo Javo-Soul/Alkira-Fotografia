@@ -9,58 +9,34 @@
     src: url(../multimedia/fonts/Roboto/Roboto-Bold.ttf);
 }
 
-h2{
-    /* comentarios */
-    color:darkorchid ;
-    font-family: 'Roboto';
-    font-weight: 200;
+/*######### body ###########*/
 
+.body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
 }
 
-ul{
-    list-style-type: none;
-}
-
-ol{
-    list-style-type: none;
-}
-
-.let p{
-    text-transform: lowercase;
-}
-
-.let p:first-letter{
-    text-transform: uppercase;
-}
-p{
-    color: black;
-    font-size: 15px;
-    font-family: 'Roboto';
-    text-align: justify;
-}
-
-a{
-    text-decoration: none;
-}
-
-/********* nav *********/
+/*######### Nav Bar ###########*/
 .nav{
     background-color: #191919;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 100%;
     z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
 }
 .nav-list{
     text-align: center;
 }
 .nav-list li{
  display: inline-block;
- margin: 30px;
+ margin: 40px;
 }
 .nav-link{
-    color: blue;
+    color: white;
     font-family: 'Roboto';
     font-size: 18px;
 }
@@ -68,81 +44,30 @@ a{
     color: #6dacbd;
     font-family: 'Roboto';
 }
-.hero{
-    background-image: url('../multimedia/image/anya.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* efecto paralax - imagen fija*/
-    background-attachment: fixed;
-    margin: 0 auto;
-    margin-top: 85px;
-}
-/********* fin de nav *********/
+/************************************************/
 
-/***************** main ****************************/
-.caja{
-    position: relative;
-    background-color:red;
-    color:aqua;
-    font-family: 'Roboto';
-    /*arriba y abajo*/
-    padding: 40px;
-    /*arriba y abajo*/
-/*    padding: 30px 50px;
-    padding-top: 30px;
-    padding-left: 50px;
-    padding-bottom: 100px;
-    padding-right: 10px;
-*/
-    margin: 0 auto;
-    margin-top: 85px;
-/*    margin-bottom: 100px;
-
-    border: 3px blue solid;*/
-    border-radius: 10px;
+.container{
+    margin: 20px;
 }
 
-.caja h2{
-    position: absolute;
-    top: 50%;
-    font-size: 100px;
+.section img{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
-.caja img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.wsp {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.wsp img{
-    width: 100px;
-    height: 100%;
-}
-
-/***************** cards ****************************/
-.card {
-    width: 45%;
-    background-color: white;
-}
-
-.card p{
-    font-family: 'Roboto';
-    font-size: 15px;
+.section p{
     text-align: justify;
-    padding: 2px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
-.form-control:focus{
-    background-color: white;
-    outline: none;
+.carrousel-fotos{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-/****************************************************/
 
 
