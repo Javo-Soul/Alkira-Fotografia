@@ -5,18 +5,17 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen'>
     <!-- Link Bootpstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel='stylesheet' href='css/style.css'>
     <title>Inicio</title>
 </head>
 
 <body class="body">
-    <header data-bs-theme="dark">
+
         <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -57,7 +56,8 @@
                             </a>
                         </li>
                         <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="https://www.linkedin.com/in/ignacio-alarcon-ingcivil/" target="_blank">
+                            <a class="nav-link" href="https://www.linkedin.com/in/ignacio-alarcon-ingcivil/"
+                                target="_blank">
                                 <i class="bi bi-linkedin"></i>
                             </a>
                         </li>
@@ -73,7 +73,7 @@
             <!-- Container wrapper -->
         </nav>
         <!-- Navbar -->
-    </header>
+
     <main>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -104,46 +104,90 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="album py-5 bg-body-tertiary">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img" src="multimedia/images/otono.png" alt="gaviota_peruana">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img" src="multimedia/images/perro_kira.png" alt="gaviota_peruana">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img" src="multimedia/images/volcan_parinacota.png" alt="gaviota_peruana">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img" src="multimedia/images/yerba_loca_ave.png" alt="gaviota_peruana">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img" src="multimedia/images/zorzal_negro.png" alt="gaviota_peruana">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img" src="multimedia/images/yerba_loca_cascada.png" alt="gaviota_peruana">
-                        </div>
+        <section id="gallery" class="gallery">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/gaviota_peruana.png" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/gaviota_peruana.png" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/perro_kira.png" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/perro_kira.png" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/montaña.jpg" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/montaña.jpg" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/montaña.png" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/montaña.png" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/otono.png" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/montaña.png" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/volcan_parinacota.png" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/montaña.png" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/yerba_loca_atardecer.png" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/montaña.png" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="gallery-item h-100">
+                                <img src="multimedia/images/yerba_loca_ave.png" class="card-img img-fluid" alt="">
+                                <div class="gallery-links d-flex align-items-center justify-content-center">
+                                    <a href="multimedia/images/montaña.png" title="Gallery 1"
+                                        class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Gallery Item -->
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-end"><a href="#">Back to top</a></p>
-            <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <footer class="footer">
+            <p class="float-end"><a href="#">Volver a Arriba</a></p>
+            <p> <a href="#"></a></p>
         </footer>
     </main>
 
