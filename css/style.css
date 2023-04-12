@@ -1,5 +1,5 @@
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, "Segoe UI", "Roboto", "Helvetica Neue", Arial;
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Cardo", sans-serif;
 }
@@ -8,7 +8,7 @@
 :root {
   --color-default: #fafafa;
   --color-primary: #27a776;
-  --color-secondary: #161718;
+  --color-secondary: black;
 }
 
 /*--------------------------------------------------------------
@@ -16,13 +16,19 @@
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
-  color: var(--color-default);
-  background-color: #000;
+  color: var(#000);
+  background-color: var(--color-secondary);
 }
 
 a {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.p {
+  font-family: var(--font-default);
+  color: var(--color-default);
+  text-align: justify;;
 }
 
 a:hover {
@@ -37,6 +43,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+  color: var(--color-default);
 }
 
 /*--------------------------------------------------------------
@@ -44,12 +51,12 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   padding: 50px 0;
-  background-color: #000;
+  background-color: var(--color-secondary);
 }
 /*######### Nav Bar ###########*/
 .nav{
     padding: 30px 100px;
-    background-color: black;
+    background-color: var(--color-secondary);
     position: fixed;
     margin-bottom: 0px;
     width: 100%;
@@ -71,6 +78,15 @@ h6 {
     font-family: 'Roboto';
 }
 
+.nav-item{
+  color: var(--color-default);
+  background-color: var(--color-secondary);
+}
+
+.dropdown-menu{
+  background-color: var(--color-secondary);
+}
+
 /************************************************/
 .main-section{
   margin-top: 2px;
@@ -79,7 +95,6 @@ h6 {
 }
 
 /************************************************/
-
 .hero-image {
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 300px; /* You must set a specified height */
@@ -106,8 +121,8 @@ h6 {
 
 /*******  carousel   **************/
 .carousel img {
-  width: 500px;
-  height: 500px;
+  width: max-content;
+  height: 550px;
   object-fit:  cover;
 }
 
@@ -118,8 +133,17 @@ h6 {
 
 /********** card ****************/
 .card{
-  width: var(--max)
+  width: var(--max);
+  background-color: var(--color-secondary);
 }
+
+.card-img-pr {
+  width: 500;
+  height: 400px;
+  align-items: center;
+  object-fit: cover;
+}
+
 
 .card-img {
   width: 100%;
@@ -128,6 +152,7 @@ h6 {
   padding: 5px;
   object-fit: cover;
 }
+
 
 .card p{
   text-align: justify;
@@ -141,185 +166,8 @@ h6 {
   padding-bottom: 130px;
 }
 
-.contact .info {
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .info i {
-  font-size: 20px;
-  color: #149ddd;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #dff3fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #050d18;
-}
-
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #173b6c;
-}
-
-.contact .info .email p {
-  padding-top: 5px;
-}
-
-.contact .info .social-links {
-  padding-left: 60px;
-}
-
-.contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-
-.contact .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-}
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact .php-email-form label {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #149ddd;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
-# Pricing Section
+# galley
 --------------------------------------------------------------*/
 .gallery {
   margin-top: 40px;
@@ -330,11 +178,7 @@ h6 {
   overflow: hidden;
   border-radius: 10px;
 }
-
-.gallery .gallery-item img {
-  transition: 0.3s;
-}
-
+/* icono de agrandar*/
 .gallery .gallery-links {
   position: absolute;
   inset: 0;
@@ -346,7 +190,7 @@ h6 {
 
 .gallery .gallery-links .preview-link,
 .gallery .gallery-links .details-link {
-  font-size: 20px;
+  font-size: 25px;
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
   line-height: 1.2;
@@ -565,19 +409,4 @@ h6 {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.footer .copyright {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.footer .credits {
-  padding-top: 6px;
-  text-align: center;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.footer .credits a {
-  color: var(--color-primary);
-}
 
