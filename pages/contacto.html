@@ -16,7 +16,7 @@
 </head>
 
 <body class="body">
-  <!-- ======= Header ======= -->
+  <!--======= Header =======-->
   <header class="header">
     <nav class="nav navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
@@ -69,20 +69,86 @@
       </div>
     </nav>
   </header>
+  <!-- End Page Header -->
+  
   <main class="main-section">
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Album example</h1>
-          <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the
-            creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
+
+    <div class="page-header d-flex align-items-center p">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Contactame</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquid laudantium itaque quasi
+              dignissimos odio repudiandae, veritatis vel assumenda ea mollitia, nemo optio numquam veniam sapiente
+              neque temporibus perspiciatis quos.</p>
+
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact p">
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center p">
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <h4>Ubicación:</h4>
+                <p>Santiago de Chile</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope-at"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-phone"></i>
+              <div>
+                <h4>Call:</h4>
+                <p>+569 421235545</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+          <div class="col-lg-9">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+              </div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
 
     <footer class="footer">
       <p class="float-end"><a href="#">Volver a Arriba</a></p>
